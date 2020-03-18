@@ -7,8 +7,8 @@ function User(props) {
         <div className='user-card'>
             <a href={props.url} className='user-card'>
                 <img src={props.image} alt={props.header} />
-                <h2>{props.header}</h2>
-                <p>{props.subheader}</p>
+                <h3>{props.header}</h3>
+                <p>{props.url}</p>
             </a>
         </div>
     );

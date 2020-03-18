@@ -25,13 +25,13 @@ Follow these steps for completing your project.
 - [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
 - [x] Add your team lead as a reviewer on the pull-request
 - [x] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [x] Do your magic!
 
 ## Minimum Viable Product
 
 - [x] Fetch data from the Github API for a Github user
-- [ ] Display the user data on the DOM
-- [ ] Use class components when you need to hold any state or use any lifecycle methods
+- [x] Display the user data on the DOM
+- [x] Use class components when you need to hold any state or use any lifecycle methods
 
 ## Planning your App
 

@@ -11,7 +11,8 @@ function FollowerList(props) {
                     header={props.user.login}
                     url={props.user.html_url}
                 />
-                <span>Followers</span>
+                <h2>{props.user.login}'s Followers</h2>
+                <br/>
                 {props.followers.map(follower => (
                     <User 
                         key={follower.id}
