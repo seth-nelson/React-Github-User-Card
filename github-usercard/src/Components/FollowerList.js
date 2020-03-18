@@ -3,17 +3,17 @@ import User from './User';
 
 
 function FollowerList(props) {
-    console.log(props);
+    console.log('follower list data return', props);
         return (
             <div className='follower-list-container'>
-                {this.props.followerList.map((followers => {
+                {props.followers.map(follower => (
                     <User 
-                        key={followers.id}
-                        image={followers.avater_url}
-                        header={followers.login}
-                        url={followers.html_url}
+                        key={follower.id}
+                        image={follower.avatar_url}
+                        header={follower.login}
+                        url={follower.html_url}
                     />
-                }))}
+                ))}
             </div>
         );
 }

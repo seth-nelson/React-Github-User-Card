@@ -1,20 +1,17 @@
 import React from 'react';
 
 
-function User (props) {
-    console.log(props)
+function User(props) {
+    console.log('user data return', props)
     return (
         <div className='user-card'>
-            {this.props.user.map((users => {
-                    <User 
-                        key={user.id}
-                        image={user.avater_url}
-                        header={user.login}
-                        url={user.html_url}
-                    />
-                }))}
+            <a href={props.url} className='user-card'>
+                <img src={props.image} alt={props.header} />
+                <h2>{props.header}</h2>
+                <p>{props.subheader}</p>
+            </a>
         </div>
-    )
+    );
 }
 
 
