@@ -18,13 +18,13 @@ class App extends React.Component {
   componentDidMount() {
     axios.get('https://api.github.com/users/seth-nelson')
       .then(response => {
-        // console.log('user data mounted', response)
+        console.log('user data mounted', response)
         this.setState({ user: response.data });
       })
 
       axios.get('https://api.github.com/users/seth-nelson/followers')
       .then(response => {
-        // console.log('follower data mounted', response)
+        console.log('follower data mounted', response)
         this.setState({ followers: response.data });
       })
       .catch((error) => console.log('Error!'))
@@ -34,11 +34,10 @@ class App extends React.Component {
     return (
       <div className='App'>
         <header className='header'>
-          <h1>GitHub Users</h1>
+          <h1>GitHub User and Followers</h1>
         </header>
         <div className='main-container'>
-          <User user={this.state.user} />
-          <FollowerList followers={this.state.followers} />
+          <FollowerList user={this.state.user} followers={this.state.followers} />
         </div>
       </div>
     );
